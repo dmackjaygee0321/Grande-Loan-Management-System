@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Offline_lendingmanagementsystem_Its.exe" version="1.0.0.1" publicKeyToken="02b5963c2d703192" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Alecive-Flatwoken-Apps-Dialog-Logout.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Offline_lendingmanagementsystem_Its" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Offline_lendingmanagementsystem_Its.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="423936">
+      <assemblyIdentity name="MySql.Data" version="6.8.8.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Xa6qyAZoox5yqXrC46XSQdZ0+WFqy3GkTSK85YCxvyM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySqlBackup.dll" size="58368">
+      <assemblyIdentity name="MySqlBackup" version="2.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tOLajK3oqFdNg5Iyepnq+7eloERTZEJK4nrbwwAQv1g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Offline_lendingmanagementsystem_Its.exe" size="1597952">
+      <assemblyIdentity name="Offline_lendingmanagementsystem_Its" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jixmW/aFmChSv66jUqBAtmlGAvpthdH07w5vAHFONtM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Alecive-Flatwoken-Apps-Dialog-Logout.ico" size="176437">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JzZ62AR4rExZGDEd0n5QSiID01pOOqCbKF2OIn+FyFM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Offline_lendingmanagementsystem_Its.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-PK1J3PE\HP" issuerKeyHash="167da47ad471942eb2f917bc1bf16f894bf5a747" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9YdT4psBftJ93YU3oJVH0iR4QRJPmvpaVCM5lbPYFyY=</DigestValue></Reference></SignedInfo><SignatureValue>lk3HBp3oa9a3zViHy361EthZnPMcU2ACJZ03ejhdAb/5Toh+L6FFXIZUn/eT8tHQmQSsIVuaPWFqMLS1ybyyu5DIejSZKZaURC3bMY5jMYXQfygLojJT57zam0//VQOJOLdUqxHzR5iG3g++DUu448f/bEWcy7mzK/tmy9Q8Hws=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>8h/N6G640g46eXzdfEFlwlg9PzQAmRGcQ9pXxJoWQJO8r+7l0JyxZU3NExcInCQzBRjtpMiuTqX5XxMM0k2ggs/4uEHsdKHkCkGqtB4QK20+j2nlH3OBzpGgr2WW5oPNzW9/X3H647SBI8Q0IMeEY0EQAHxwMFvIAZX4bmqHJgE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2617d8b3953923545afa9a4f12417824d24795a03785dd7dd27e019be25387f5" Description="" Url=""><as:assemblyIdentity name="Offline_lendingmanagementsystem_Its.exe" version="1.0.0.1" publicKeyToken="02b5963c2d703192" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-PK1J3PE\HP</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QmuR3P4SK1+LK3RPslnin2w7AWVDzv7Fzk8bksyKntk=</DigestValue></Reference></SignedInfo><SignatureValue>NcpLTX8ea5e2uW5azRHBrhNWc9xpUE1UH9Bsps8ufY+LlGDBDu7N7thfN62wmW4t6QUD5C6Kf1HpfDFpjYKq+Q4IAuw+vuPAE0NNCRF8Rp5dhkszjWrXj2GCCwjHv6TiFihZ+wPgaQZagKo7ITxsVk29cOCLj9KtK7hfLqbT1h8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>8h/N6G640g46eXzdfEFlwlg9PzQAmRGcQ9pXxJoWQJO8r+7l0JyxZU3NExcInCQzBRjtpMiuTqX5XxMM0k2ggs/4uEHsdKHkCkGqtB4QK20+j2nlH3OBzpGgr2WW5oPNzW9/X3H647SBI8Q0IMeEY0EQAHxwMFvIAZX4bmqHJgE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQFZUUQ83PtYNBRjqoCE2MrTANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQARABFAFMASwBUAE8AUAAtAFAASwAxAEoAMwBQAEUAXABIAFAwHhcNMTkxMTA2MTczNjM3WhcNMjAxMTA1MjMzNjM3WjAvMS0wKwYDVQQDHiQARABFAFMASwBUAE8AUAAtAFAASwAxAEoAMwBQAEUAXABIAFAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAPIfzehuuNIOOnl83XxBZcJYPT80AJkRnEPaV8SaFkCTvK/u5dCcsWVNzRMXCJwkMwUY7aTIrk6l+V8TDNJNoILP+LhB7HSh5ApBqrQeECttPo9p5R9zgc6RoK9lluaDzc1vf19x+uO0gSPENCDHhGNBEAB8cDBbyAGV+G5qhyYBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAZMs7sgiaUao8Ik2mJBTC/F0aQPf8HO4bzG1FMKpp6mjn/wrfPpE2OCYAqdnpwivcxmmSK9qZyJu6UT71s72g5TeU9f5fTvMgQ0zXRtQXfzivfEsOp5dkClH01+KKodXs0jvbiikVAUrX82ZA4JaaZzMapp77inLjfsmSr3C9HXg=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

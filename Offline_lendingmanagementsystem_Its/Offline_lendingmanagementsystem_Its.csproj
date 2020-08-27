@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EE0A512-47A8-4017-82FC-5BC6DD24B407}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Offline_lendingmanagementsystem_Its</RootNamespace>
+    <AssemblyName>Offline_lendingmanagementsystem_Its</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\HP\Desktop\ITS_INSTALLER_NEW\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Alecive-Flatwoken-Apps-Dialog-Logout.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9AC306BE4F104AD7F1E82075E3A0C58157BE4CEF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Offline_lendingmanagementsystem_Its_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>..\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountreport.Designer.cs">
+      <DependentUpon>accountreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="accountreports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountreports.Designer.cs">
+      <DependentUpon>accountreports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activitylog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activitylog.Designer.cs">
+      <DependentUpon>Activitylog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Deduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Deduction.Designer.cs">
+      <DependentUpon>Add Deduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addattachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addattachment.Designer.cs">
+      <DependentUpon>addattachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddComaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddComaker.Designer.cs">
+      <DependentUpon>AddComaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addcus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addcus.Designer.cs">
+      <DependentUpon>Addcus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="areport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="areport.Designer.cs">
+      <DependentUpon>areport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attachment_maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attachment_maintenance.Designer.cs">
+      <DependentUpon>attachment_maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attachment_updatedelte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attachment_updatedelte.Designer.cs">
+      <DependentUpon>attachment_updatedelte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Back_up_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Back_up_Restore.Designer.cs">
+      <DependentUpon>Back_up_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrow.Designer.cs">
+      <DependentUpon>borrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrowerinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrowerinformation.Designer.cs">
+      <DependentUpon>Borrowerinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowerReport.Designer.cs">
+      <DependentUpon>BorrowerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="breport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="breport.Designer.cs">
+      <DependentUpon>breport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditInvistigator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditInvistigator.Designer.cs">
+      <DependentUpon>CreditInvistigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deduction_m.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deduction_m.Designer.cs">
+      <DependentUpon>Deduction_m.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delinquent Percentage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delinquent Percentage.Designer.cs">
+      <DependentUpon>Delinquent Percentage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delinquent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delinquent.Designer.cs">
+      <DependentUpon>delinquent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogactivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogactivate.Designer.cs">
+      <DependentUpon>dialogactivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogd.Designer.cs">
+      <DependentUpon>dialogd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogm.Designer.cs">
+      <DependentUpon>dialogm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogsearch.Designer.cs">
+      <DependentUpon>dialogsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogsearchpayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogsearchpayment.Designer.cs">
+      <DependentUpon>dialogsearchpayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogsearch_bi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogsearch_bi.Designer.cs">
+      <DependentUpon>dialogsearch_bi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogsearch_ci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogsearch_ci.Designer.cs">
+      <DependentUpon>dialogsearch_ci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogupdate.Designer.cs">
+      <DependentUpon>dialogupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogupdateability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogupdateability.Designer.cs">
+      <DependentUpon>dialogupdateability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goodpayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goodpayer.Designer.cs">
+      <DependentUpon>Goodpayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loanmaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loanmaintenance.Designer.cs">
+      <DependentUpon>loanmaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masterlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masterlist.Designer.cs">
+      <DependentUpon>Masterlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="masterlistreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterlistreport.Designer.cs">
+      <DependentUpon>masterlistreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="max_loanmaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="max_loanmaintenance.Designer.cs">
+      <DependentUpon>max_loanmaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mreport.Designer.cs">
+      <DependentUpon>mreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pincode_approval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pincode_approval.Designer.cs">
+      <DependentUpon>pincode_approval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reciept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reciept.Designer.cs">
+      <DependentUpon>reciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statementofact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statementofact.Designer.cs">
+      <DependentUpon>statementofact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateborrowerattachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateborrowerattachment.Designer.cs">
+      <DependentUpon>updateborrowerattachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateborrowerinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateborrowerinfo.Designer.cs">
+      <DependentUpon>updateborrowerinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatedeleteuserlvl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatedeleteuserlvl.Designer.cs">
+      <DependentUpon>updatedeleteuserlvl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userlevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlevel.Designer.cs">
+      <DependentUpon>userlevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usermaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usermaintenance.Designer.cs">
+      <DependentUpon>usermaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewattachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewattachment.Designer.cs">
+      <DependentUpon>viewattachment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="accountreport.resx">
+      <DependentUpon>accountreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountreports.resx">
+      <DependentUpon>accountreports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activitylog.resx">
+      <DependentUpon>Activitylog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Deduction.resx">
+      <DependentUpon>Add Deduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addattachment.resx">
+      <DependentUpon>addattachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddComaker.resx">
+      <DependentUpon>AddComaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addcus.resx">
+      <DependentUpon>Addcus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="areport.resx">
+      <DependentUpon>areport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attachment_maintenance.resx">
+      <DependentUpon>attachment_maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attachment_updatedelte.resx">
+      <DependentUpon>attachment_updatedelte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Back_up_Restore.resx">
+      <DependentUpon>Back_up_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrow.resx">
+      <DependentUpon>borrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowerinformation.resx">
+      <DependentUpon>Borrowerinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowerReport.resx">
+      <DependentUpon>BorrowerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="breport.resx">
+      <DependentUpon>breport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditInvistigator.resx">
+      <DependentUpon>CreditInvistigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deduction_m.resx">
+      <DependentUpon>Deduction_m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delinquent Percentage.resx">
+      <DependentUpon>Delinquent Percentage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delinquent.resx">
+      <DependentUpon>delinquent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogactivate.resx">
+      <DependentUpon>dialogactivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogd.resx">
+      <DependentUpon>dialogd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogm.resx">
+      <DependentUpon>dialogm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogsearch.resx">
+      <DependentUpon>dialogsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogsearchpayment.resx">
+      <DependentUpon>dialogsearchpayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogsearch_bi.resx">
+      <DependentUpon>dialogsearch_bi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogsearch_ci.resx">
+      <DependentUpon>dialogsearch_ci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogupdate.resx">
+      <DependentUpon>dialogupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogupdateability.resx">
+      <DependentUpon>dialogupdateability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goodpayer.resx">
+      <DependentUpon>Goodpayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loanmaintenance.resx">
+      <DependentUpon>loanmaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masterlist.resx">
+      <DependentUpon>Masterlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterlistreport.resx">
+      <DependentUpon>masterlistreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="max_loanmaintenance.resx">
+      <DependentUpon>max_loanmaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mreport.resx">
+      <DependentUpon>mreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pincode_approval.resx">
+      <DependentUpon>pincode_approval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="reciept.resx">
+      <DependentUpon>reciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statementofact.resx">
+      <DependentUpon>statementofact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateborrowerattachment.resx">
+      <DependentUpon>updateborrowerattachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateborrowerinfo.resx">
+      <DependentUpon>updateborrowerinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatedeleteuserlvl.resx">
+      <DependentUpon>updatedeleteuserlvl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userlevel.resx">
+      <DependentUpon>userlevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usermaintenance.resx">
+      <DependentUpon>usermaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewattachment.resx">
+      <DependentUpon>viewattachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Offline_lendingmanagementsystem_Its_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="qwe.jpg" />
+    <Content Include="Alecive-Flatwoken-Apps-Dialog-Logout.ico" />
+    <EmbeddedResource Include="grandeloan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
